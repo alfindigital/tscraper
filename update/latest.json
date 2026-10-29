@@ -1,0 +1,6 @@
+{
+  "latest": "3.13.1",
+  "url": "https://github.com/alfindigital/tscraper/releases",
+  "selectors": null,
+  "notes": "Tscraper update + selector hot-patch manifest. The extension fetches this on load. To announce a new build, bump 'latest' and set 'url'. To fix a Telegram DOM change WITHOUT a reinstall, put a { \"SEL\": {..}, \"MEDIA\": [[type,sel],..] } object in 'selectors' — every installed copy applies it automatically. Keep 'latest' = the current shipped version so existing users don't see a false update banner."
+}
