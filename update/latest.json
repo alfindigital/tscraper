@@ -1,6 +1,6 @@
 {
   "latest": "3.13.1",
-  "url": "https://github.com/alfindigital/tscraper/releases",
+  "url": "",
   "selectors": null,
-  "notes": "Tscraper update + selector hot-patch manifest. The extension fetches this on load. To announce a new build, bump 'latest' and set 'url'. To fix a Telegram DOM change WITHOUT a reinstall, put a { \"SEL\": {..}, \"MEDIA\": [[type,sel],..] } object in 'selectors' — every installed copy applies it automatically. Keep 'latest' = the current shipped version so existing users don't see a false update banner."
+  "notes": "Tscraper update + selector hot-patch manifest. The extension fetches this on load. To announce a new build, bump 'latest' and set 'url' to the real download/store page (leave '' until one exists: the banner then shows without a link). Then run `npm run publish-update` (copies this file to the PUBLIC repo alfindigital/tscraper, which is what installed copies read; CI workflow update-sync fails if they drift). To fix a Telegram DOM change WITHOUT a reinstall, put a { \"SEL\": {..}, \"MEDIA\": [[type,sel],..] } object in 'selectors' — every installed copy applies it automatically. Keep 'latest' = the current shipped version so existing users don't see a false update banner."
 }
